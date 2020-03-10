@@ -1,0 +1,123 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    .p-component {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.auth-wrapper {
+    width: 750px;
+    margin: 350px auto;
+}
+
+.step-buttons {
+    text-align: right;
+}
+
+.auth-form-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ededed;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.p-button-rounded {
+    padding: 0 20px !important;
+    font-size: 15px !important;
+    background: transparent !important;
+    border: 2px solid #ffba01 !important;
+    color: gray;
+
+    .pi {
+        font-size: 35px;
+        color: #ffba01;
+    }
+}
+
+.p-multiselect {
+    border: none !important;
+    border-bottom: 1px solid lightgray !important;
+}
+
+.p-focus {
+    box-shadow: none!important;
+    border-color: #ffba01 !important;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+
+    div {
+        flex: 0 0 50%;
+        padding: 20px;
+        span {
+            outline: none !important;
+        }
+        label {
+            left: 1.25em;
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 10px;
+            color: darkgray;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid lightgray;
+            &:active, &:focus {
+               border-color: #ffba01 !important;
+               box-shadow: none !important;
+            }
+        }
+    }
+}
+
+.multiselect-wrap {
+    p {
+       margin-bottom: 25px;
+       color: gray;
+       font-style: italic; 
+    }
+}
+
+.error-messages {
+    text-align: center;
+    p {
+        color: indianred;
+    }
+}
+
+.display-error {
+   input {
+       border-color: indianred !important;
+   }
+   border-color: indianred !important;
+}
+
+.animated {
+	animation-duration: 1.2s;
+	animation-fill-mode: both;
+}
+
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }
